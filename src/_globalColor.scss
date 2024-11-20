@@ -1,90 +1,92 @@
-/* Change colors in this file to style to your needs on a global level. 
-Certain colors are used for different and multiply types of elements. 
-For greater control over colors visit each components .scss file. */
-
 // button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
-$topButtonHover: #000;
+$buttonColor: #30333b; // Changed to Onyx for a dark button background
+$buttonHover: #1a3a6e; // Retained Yale Blue for hover
+$topButtonHover: #282932; // Raisin Black for hover
 
 // text colors light theme
-$titleColor: #000000;
-$textColor: #000000;
-$subTitle: #868e96;
-$cardSubtitle: #666666;
-$talkCardSubTitle: #7f8287;
-$blogCardTitleColor: #262626;
+$titleColor: #ffffff; // Retained White for readability
+$textColor: #b2afa4; // Retained Silver for general text
+$subTitle: #b2afa4; // Retained Silver for subtleties
+$cardSubtitle: #b2afa4; // Retained Silver
+$talkCardSubTitle: #b2afa4; // Retained Silver
+$blogCardTitleColor: #ffffff; // Retained White for emphasis
 
 // text color dark theme
-$textColorDark: #ffffff;
+$textColorDark: #b2afa4; // Retained Silver for subtle contrast
 
 // toggle switch colors
-$toggleCheck: #2196f3;
-$toggleSwitchSliderBG: #ccc;
+$toggleCheck: #1a3a6e; // Changed to Yale Blue for primary emphasis
+$toggleSwitchSliderBG: #30333b; // Retained Onyx for dark background
 
 // githubRepo specific colors
-$githubRepoCardLanguageColorBG: #0000ff;
-$githubRepoCardColor: rgb(88, 96, 105);
-$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
-$githubRepoCardRepoNameColor: rgb(36, 41, 46);
-$githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: #6c63ff;
+$githubRepoCardLanguageColorBG: #1a3a6e; // Retained Yale Blue
+$githubRepoCardColor: #b2afa4; // Retained Silver
+$githubRepoCardRepoCardStatsColor: #b2afa4; // Retained Silver
+$githubRepoCardRepoNameColor: #ffffff; // Retained White
+$githubProfileCardLocationTS: #30333b; // Changed to Onyx for a softer tone
+$githubProfileCardBorder: #1a3a6e; // Retained Yale Blue for subtle borders
 
 // light background colors
-$lightBackground1: #fff;
-$lightBackground2: rgb(255, 255, 255);
-$lightBackground3: #f5f2f4;
-$blogCardContainerColor: #586069;
+$lightBackground1: #30333b; // Changed to Onyx for a richer dark tone
+$lightBackground2: #282932; // Retained Raisin Black for sections
+$lightBackground3: #30333b; // Retained Onyx for consistency
+$blogCardContainerColor: #1a3a6e; // Retained Yale Blue for blog card emphasis
+
 // dark background colors
-$darkBackground: #171c28;
+$darkBackground: #121958; // Retained Penn Blue for depth
 
 // light theme box shadows
-$lightBoxShadowDark: rgba(0, 0, 0, 0.2);
-$lightBoxShadow: rgba(0, 0, 0, 0.1);
-$lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
+$lightBoxShadowDark: rgba(43, 43, 43, 0.3); // Darker grey tone
+$lightBoxShadow: rgba(0, 0, 0, 0.2); // Slight adjustment for consistency
+$lightBoxShadowDarker: rgba(43, 43, 43, 0.4); // Darker grey for depth
 
 // dark theme box shadows
-$darkBoxShadow: #d9dbdf;
-$darkBoxShadow2: #ffffff;
+$darkBoxShadow: #282932; // Changed to Raisin Black
+$darkBoxShadow2: #b2afa4; // Retained Silver for subtle highlights
 
 // linear gradients
 $experienceCardBlurredDivLG: linear-gradient(
-  rgba(0, 0, 0, 0.4),
-  rgba(0, 0, 0, 0.2)
-);
+  rgba(43, 43, 43, 0.7),
+  rgba(43, 43, 43, 0.4)
+); // Darker grey tones
 $experienceCardBannerLG: linear-gradient(
-  rgba(0, 0, 0, 0.7),
-  rgba(0, 0, 0, 0.5)
-);
+  rgba(18, 25, 88, 0.7),
+  rgba(18, 25, 88, 0.5)
+); // Retained Penn Blue for banners
 
 // borders
-$progressBarBackground: rgb(243, 239, 239);
-$lightBorder1: rgba(211, 211, 211, 0.397);
-$educationCardBorder: #a9a7f9;
+$progressBarBackground: #b2afa4; // Retained Silver for elegance
+$lightBorder1: rgba(178, 175, 164, 0.5); // Retained Silver tone
+$educationCardBorder: #1a3a6e; // Changed to Yale Blue for a cooler tone
 
 // hovers
-$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
-$blogCardHoverSmallColor: rgba(255, 255, 255, 0.8);
-$headerHoverBG: #f4f4f4;
-$contactDetailHoverTS: #b5b5b5;
+$achievementCertificateCardHoverDark: rgba(
+  43,
+  43,
+  43,
+  0.2
+); // Softer grey tone for hover
+$blogCardHoverSmallColor: rgba(178, 175, 164, 0.8); // Retained Silver
+$headerHoverBG: #30333b; // Retained Onyx for headers
+$contactDetailHoverTS: #b2afa4; // Retained Silver for subtlety
 
 // misc backgrounds
-$progressBarSpanBG: #aaa5ff;
-$iconBackground: #333;
-$appHeaderBG: #282c34;
+$progressBarSpanBG: #1a3a6e; // Changed to Yale Blue for accents
+$iconBackground: #282932; // Retained Raisin Black
+$appHeaderBG: #121958; // Retained Penn Blue for headers
 
 // misc colors
-$skillsColor: #645beb;
-$appLink: #09d3ac;
+$skillsColor: #b2afa4; // Changed to Silver for uniform text
+$appLink: #b2afa4; // Changed to Silver for links
 
 // social media icons
-$faceBook: #3b5998;
-$linkedin: #0e76a8;
-$github: #333;
-$gitlab: #fca326;
-$google: #ea4335;
-$twitter: #1da1f2;
-$medium: #000;
-$stackoverflow: #f48024;
-$instagram: #c13584;
-$kaggle: #20beff;
+$faceBook: #1a3a6e; // Retained Yale Blue
+$linkedin: #1a3a6e; // Retained Yale Blue
+$github: #30333b; // Retained Onyx
+$gitlab: #30333b; // Changed to Onyx for uniformity
+$google: #1a3a6e; // Changed to Yale Blue
+$twitter: #1a3a6e; // Retained Yale Blue
+$medium: #30333b; // Changed to Onyx
+$stackoverflow: #1a3a6e; // Changed to Yale Blue
+$instagram: #1a3a6e; // Changed to Yale Blue
+$kaggle: #1a3a6e; // Retained Yale Blue

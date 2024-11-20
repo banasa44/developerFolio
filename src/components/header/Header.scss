@@ -23,8 +23,13 @@
 .header {
   background-color: $lightBackground1;
   max-width: 100%;
-  padding: 15px 20px;
+  padding: 10px 20px; /* Reduced padding to make the header thinner */
   margin: 0px auto;
+  display: flex;
+  align-items: center; /* Align content vertically in the header */
+  justify-content: space-between; /* Space between logo and menu items */
+  height: 60px; /* Set fixed height for a thinner header */
+  overflow: hidden; /* Prevent overflow from content inside the header */
 }
 
 .header ul {
@@ -40,7 +45,7 @@
 
 .header li a {
   display: block;
-  padding: 15px 20px;
+  padding: 10px 15px; /* Adjust padding for thinner header */
   color: $textColor;
   text-decoration: none;
 }
@@ -56,7 +61,7 @@
   float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 0;
   line-height: normal;
 }
 
@@ -66,6 +71,14 @@
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
+}
+
+.header .logo-image {
+  width: 200px; /* Increased width to make the logo larger */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Prevent logo from exceeding the header height */
+  vertical-align: middle; /* Align with surrounding text */
+  object-fit: contain; /* Ensure the logo scales properly */
 }
 
 /* menu */
@@ -114,12 +127,6 @@
 .header .menu-icon .navicon-dark:before,
 .header .menu-icon .navicon-dark:after {
   background: $textColorDark !important;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
 }
 
 .header .menu-icon .navicon:before {
@@ -157,7 +164,7 @@
   top: 0;
 }
 
-/* 48em = 768px */
+/* Responsive Design */
 
 @media (min-width: 48em) {
   .header li {
@@ -175,8 +182,19 @@
     display: none;
   }
 }
-@media (max-width: 960px) and (min-width: 768px) {
+
+@media (max-width: 960px) {
   .header {
     font-size: 12px;
+    height: 50px; /* Reduced header height for smaller screens */
+  }
+  .header .logo-image {
+    width: 150px; /* Adjusted logo size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo-image {
+    width: 100px; /* Adjusted logo size for very small screens */
   }
 }

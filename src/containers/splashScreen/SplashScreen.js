@@ -3,6 +3,7 @@ import "./SplashScreen.css";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import {greeting, splashScreen} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import logo from "../../assets/images/b44FullCuveLogo.png";
 
 export default function SplashScreen() {
   const {isDark} = useContext(StyleContext);
@@ -12,9 +13,7 @@ export default function SplashScreen() {
         <DisplayLottie animationData={splashScreen.animation} />
       </div>
       <div className="splash-title-container">
-        <span className="grey-color"> &lt;</span>
-        <span className="splash-title">{greeting.username}</span>
-        <span className="grey-color">/&gt;</span>
+        <img src={logo} alt="Logo" className="logo-image" />
       </div>
     </div>
   );

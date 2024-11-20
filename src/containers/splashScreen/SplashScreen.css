@@ -1,23 +1,29 @@
 .splash-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  flex-direction: column; /* Stacks the two sections vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  min-height: 100vh; /* Ensures it takes full viewport height */
 }
 
 .splash-animation-container {
-  height: 50vh;
+  display: flex;
+  justify-content: center; /* Center animation horizontally */
+  align-items: center; /* Center animation vertically */
+  height: 10vh; /* Adjust height as needed for proportional spacing */
 }
 
 .splash-title-container {
-  font-size: 2.5rem;
-  text-decoration: none;
+  display: flex;
+  justify-content: center; /* Center title container horizontally */
+  align-items: center; /* Center title container vertically */
+  text-align: center; /* Ensures the image and text are aligned centrally */
+  margin-top: 20px; /* Add some spacing between animation and title */
 }
-.splash-title {
-  font-family: "Agustina Regular", cursive;
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 20px;
+
+.logo-image {
+  width: 700px; /* Adjust size as needed */
+  max-width: 100%; /* Ensure it’s responsive */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align image with any surrounding text */
 }
