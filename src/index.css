@@ -25,6 +25,10 @@ body {
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Add these properties */
+  background-color: #30333b; /* Use $lightBackground1 or Onyx directly */
+  color: #b2afa4; /* Use $textColor for consistent readability */
 }
 /* Media Query */
 @media (max-width: 1380px) {

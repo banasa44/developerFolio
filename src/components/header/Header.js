@@ -52,7 +52,7 @@ function Header() {
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource">Repositories</a>
             </li>
           )}
           {viewAchievement && (
@@ -60,7 +60,7 @@ function Header() {
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {viewBlog && (
+          {/* {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
             </li>
@@ -74,15 +74,15 @@ function Header() {
             <li>
               <a href="#resume">Resume</a>
             </li>
-          )}
+          )} */}
           <li>
             <a href="#contact">Contact Me</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
+            {/* <a>
               <ToggleSwitch />
-            </a>
+            </a> */}
           </li>
         </ul>
       </header>
